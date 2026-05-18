@@ -1,64 +1,64 @@
 # ExpenseTracker
 
-## Deskripsi Projek
+## Project Description
 
-ExpenseTracker adalah smart contract berbasis Stellar Soroban yang digunakan untuk mencatat pemasukan dan pengeluaran secara sederhana.
+ExpenseTracker is a Stellar Soroban smart contract designed to record simple income and expense transactions.
 
-Project ini dibuat agar pengguna dapat menyimpan data transaksi seperti judul transaksi, jumlah uang, kategori, dan jenis transaksi. Jenis transaksi dapat berupa `income` untuk pemasukan atau `expense` untuk pengeluaran.
+This project allows users to store transaction data such as title, amount, category, and transaction type. The transaction type can be either `income` for money received or `expense` for money spent.
 
-Dengan ExpenseTracker, pengguna dapat melihat daftar transaksi, menghitung total pemasukan, menghitung total pengeluaran, serta mengetahui saldo akhir berdasarkan data transaksi yang sudah dibuat.
+With ExpenseTracker, users can view all transactions, calculate total income, calculate total expenses, and check the final balance based on the stored transaction records.
 
-## Visi Projek
+## Project Vision
 
-Visi dari ExpenseTracker adalah membantu pengguna mencatat dan memantau keuangan pribadi secara sederhana, transparan, dan terdesentralisasi menggunakan teknologi blockchain.
+The vision of ExpenseTracker is to help users manage and monitor their personal finances in a simple, transparent, and decentralized way using blockchain technology.
 
-Project ini diharapkan dapat menjadi dasar untuk pengembangan aplikasi keuangan yang lebih lengkap di masa depan, seperti budgeting, laporan keuangan, pengelompokan transaksi, dan pencatatan histori keuangan berbasis smart contract.
+This project can also become a foundation for more advanced financial applications in the future, such as budgeting tools, financial reports, transaction history tracking, and decentralized personal finance management.
 
-## List Fitur Projek
+## Project Features
 
-ExpenseTracker memiliki beberapa fitur utama, yaitu:
+ExpenseTracker provides several main features:
 
-1. Menambahkan transaksi baru
+1. Add a new transaction
 
-   Pengguna dapat membuat transaksi baru dengan memasukkan judul, jumlah uang, kategori, dan jenis transaksi.
+   Users can create a new transaction by entering the title, amount, category, and transaction type.
 
-2. Melihat semua transaksi
+2. View all transactions
 
-   Pengguna dapat melihat seluruh daftar transaksi yang sudah tersimpan di smart contract.
+   Users can view all transactions stored in the smart contract.
 
-3. Mengubah transaksi
+3. Update a transaction
 
-   Pengguna dapat memperbarui data transaksi berdasarkan ID transaksi yang sudah dibuat.
+   Users can update an existing transaction by using its transaction ID.
 
-4. Menghapus transaksi
+4. Delete a transaction
 
-   Pengguna dapat menghapus transaksi tertentu berdasarkan ID transaksi.
+   Users can delete a specific transaction by using its transaction ID.
 
-5. Menghitung total pemasukan
+5. Calculate total income
 
-   Smart contract dapat menghitung seluruh transaksi dengan jenis `income`.
+   The smart contract can calculate all transactions with the `income` type.
 
-6. Menghitung total pengeluaran
+6. Calculate total expenses
 
-   Smart contract dapat menghitung seluruh transaksi dengan jenis `expense`.
+   The smart contract can calculate all transactions with the `expense` type.
 
-7. Melihat saldo akhir
+7. Check final balance
 
-   Smart contract dapat menghitung saldo akhir dari total pemasukan dikurangi total pengeluaran.
+   The smart contract can calculate the final balance by subtracting total expenses from total income.
 
-## Struktur Data
+## Data Structure
 
-Setiap transaksi memiliki struktur data sebagai berikut:
+Each transaction contains the following data:
 
-- `id`: ID unik untuk setiap transaksi
-- `title`: Judul atau nama transaksi
-- `amount`: Jumlah uang pada transaksi
-- `category`: Kategori transaksi
-- `transaction_type`: Jenis transaksi, yaitu `income` atau `expense`
+- `id`: Unique ID for each transaction
+- `title`: Transaction title or name
+- `amount`: Transaction amount
+- `category`: Transaction category
+- `transaction_type`: Transaction type, either `income` or `expense`
 
-## Contoh Kategori
+## Example Categories
 
-Beberapa contoh kategori yang dapat digunakan:
+Some example categories that can be used:
 
 - `food`
 - `transport`
@@ -67,17 +67,17 @@ Beberapa contoh kategori yang dapat digunakan:
 - `entertainment`
 - `education`
 
-## Fungsi Smart Contract
+## Smart Contract Functions
 
 ### get_transactions
 
-Digunakan untuk melihat semua transaksi yang tersimpan.
+Used to view all stored transactions.
 
 ### create_transaction
 
-Digunakan untuk menambahkan transaksi baru.
+Used to add a new transaction.
 
-Parameter:
+Parameters:
 
 - `title`
 - `amount`
@@ -86,9 +86,9 @@ Parameter:
 
 ### update_transaction
 
-Digunakan untuk mengubah data transaksi berdasarkan ID.
+Used to update transaction data by transaction ID.
 
-Parameter:
+Parameters:
 
 - `id`
 - `new_title`
@@ -98,7 +98,7 @@ Parameter:
 
 ### delete_transaction
 
-Digunakan untuk menghapus transaksi berdasarkan ID.
+Used to delete a transaction by transaction ID.
 
 Parameter:
 
@@ -106,17 +106,17 @@ Parameter:
 
 ### get_total_income
 
-Digunakan untuk menghitung total pemasukan.
+Used to calculate the total income.
 
 ### get_total_expense
 
-Digunakan untuk menghitung total pengeluaran.
+Used to calculate the total expenses.
 
 ### get_balance
 
-Digunakan untuk menghitung saldo akhir.
+Used to calculate the final balance.
 
-## ID Smart Contract
+## Smart Contract ID
 
 ```text
 CBHMFX5VWFSTBX25EEMX4LGZQZXW7L6YRMIJ4BHK4GRTM54H335TSCG5
